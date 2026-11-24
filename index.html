@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN.GD - مترجم المن.قد</title>
+    <!-- استيراد خط Readex Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <header>
+            <h1 id="title" title="هي لغة تم صنعها في 2025 من قبل الصديقان اياد و ايوب واخذ الاسم من بداية لقب هذان الاخيران">mN.gD</h1>
+            <h2 id="chapeau">نرحب بكم في حلقة التحويل للـ من.قد</h2>
+        </header>
+
+        <main>
+            <form>
+                <section id="mnkd">
+                    <div class="input-group">
+                        <label for="word">أدخل الكلمة المراد تحويلها:</label>
+                        <input type="text" title="ادخل كلمتك" name="word" autofocus placeholder="اكتب النص هنا..." id="word" autocomplete="off">
+                    </div>
+
+                    <div class="actions">
+                        <button id="submit" title="اضغط للتحول للمنقد">تحويل للمن.قد</button>
+                        <input type="reset" id="reset" value="إعادة">
+                    </div>
+
+                    <div class="input-group">
+                        <label for="reselt">النتيجة:</label>
+                        <div class="result-wrapper">
+                            <input type="text" title="نتيجة عملك" id="reselt" placeholder="كلمتك بالمن.قد ستظهر هنا..." readonly>
+                            <span id="copierBtn" title="اضغط لنسخ النتيجة">نسخ !</span>
+                        </div>
+                    </div>
+                </section>
+            </form>
+        </main>
+    </div>
+
+    <div id="copy-toast"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
